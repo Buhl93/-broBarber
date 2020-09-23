@@ -1,0 +1,111 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  width: 60%;
+  left: 20%;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .book-btn {
+    background: white;
+    border-radius: 8px;
+    padding: 3px 12px 5px 12px;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;    
+  }
+}
+
+.default {
+  position: absolute;
+  top: 20px;
+  animation: bgColorDefault 0.5s ease-in-out, moveDown 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 100;
+  animation: bgColor 0.5s ease-in-out, moveUp 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.navbar-logo-big {
+  content: url('./barbershop.jpg');
+  animation: logoExpand 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.navbar-logo-small {
+  content: url('./barbershop.jpg');
+  animation: logoShrink 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bgColor {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes bgColorDefault {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes logoShrink {
+  from {
+    height: 120px;
+    width: 120px;
+  }
+  to {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@keyframes logoExpand {
+  from {
+    height: 90px;
+    width: 90px;
+  }
+  to {
+    height: 120px;
+    width: 120px;
+  }
+}

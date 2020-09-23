@@ -1,0 +1,192 @@
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 20px;
+  width: 60%;
+  left: 20%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.nav-bar .book-btn {
+  background: white;
+  border-radius: 8px;
+  padding: 3px 12px 5px 12px;
+  font-size: 1em;
+  font-weight: 600;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.default {
+  position: absolute;
+  top: 20px;
+  -webkit-animation: bgColorDefault 0.5s ease-in-out, moveDown 0.5s ease-in-out;
+          animation: bgColorDefault 0.5s ease-in-out, moveDown 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 100;
+  -webkit-animation: bgColor 0.5s ease-in-out, moveUp 0.5s ease-in-out;
+          animation: bgColor 0.5s ease-in-out, moveUp 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.navbar-logo-big {
+  content: url("./barbershop.jpg");
+  -webkit-animation: logoExpand 0.5s ease-in-out;
+          animation: logoExpand 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.navbar-logo-small {
+  content: url("./barbershop.jpg");
+  -webkit-animation: logoShrink 0.5s ease-in-out;
+          animation: logoShrink 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bgColor {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes bgColor {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes bgColorDefault {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes bgColorDefault {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes moveUp {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes logoShrink {
+  from {
+    height: 120px;
+    width: 120px;
+  }
+  to {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@keyframes logoShrink {
+  from {
+    height: 120px;
+    width: 120px;
+  }
+  to {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@-webkit-keyframes logoExpand {
+  from {
+    height: 90px;
+    width: 90px;
+  }
+  to {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@keyframes logoExpand {
+  from {
+    height: 90px;
+    width: 90px;
+  }
+  to {
+    height: 120px;
+    width: 120px;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */
