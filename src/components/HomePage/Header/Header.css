@@ -9,12 +9,26 @@
           filter: grayscale(100%) blur(3px);
 }
 
+.HeadLine {
+  font-family: 'Amatic SC', cursive;
+  font-size: 8rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+  padding: 10px 30px 10px 30px;
+  text-shadow: 0px 10px 8px black;
+}
+
 .text-box {
   width: 60%;
-  height: 500px;
-  margin: auto;
-  margin-top: 270px;
-  background: rgba(0, 0, 0, 0.7);
+  height: 300px;
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,12 +38,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text-box p {
   color: white;
   width: 70%;
   font-size: 2em;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .scroll-circle {
